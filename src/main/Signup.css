@@ -1,0 +1,66 @@
+.authent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .signup-form {
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  .form-field > div {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .form-action {
+    margin-top: 20px;
+  }
+  
+  .form-action button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-action button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-footer {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .form-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .form-footer a:hover {
+    text-decoration: underline;
+  }
+  
