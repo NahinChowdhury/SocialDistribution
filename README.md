@@ -24,6 +24,12 @@ Setup
     >> NPM: v8.5.3
     >> Python: v3.8
 
+### Prerequisites
+> Create a .env file with the following content:
+>    > DATABASE_URL=sqlite:///db.sqlite3
+>    > 
+>    > DJANGO_ENV=development
+
 ### Running process
     >> virtualenv venv
     >> venv\Scripts\activate
