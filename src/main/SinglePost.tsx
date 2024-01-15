@@ -146,7 +146,7 @@ export const SinglePost:FunctionComponent<any> = () => {
 								</span>
 								<div className="d-flex justify-content-between align-items-center">
 									<p className="card-text mb-0"><Link to={`/${post.author.id.split('/')[post.author.id.split('/').length - 1]}`}>{post.author.displayName}</Link> • {post.visibility} • {new Date(post.published).toLocaleString()}</p>
-									{ (post.id.includes("c404-5f70eb0b3255.herokuapp.com") || post.id.includes("127.0.0.1")) &&
+									{ (post.id.includes("socialdistribution.onrender.com") || post.id.includes("127.0.0.1")) &&
 										<span>
 											{Object.keys(user).length !== 0 && post.author.id === user.id && <button className="btn btn-warning" style={{marginRight: "0.25rem"}} onClick={() => {setOpenEditPost(!openEditPost); setPostToEdit(post)}}>Edit Post</button>}
 											{Object.keys(user).length !== 0 && post.author.id === user.id && <button className="btn btn-danger" style={{marginRight: "0.25rem"}} onClick={() => deletePost(post.id)}>Delete Post</button>}
@@ -167,7 +167,7 @@ export const SinglePost:FunctionComponent<any> = () => {
 										{<img src={post.image} alt="Post Image" style={{width: "50%"}}/>}
 									</div>
 								}
-								{ (post.id.includes("c404-5f70eb0b3255.herokuapp.com") || post.id.includes("127.0.0.1")) &&
+								{ (post.id.includes("socialdistribution.onrender.com") || post.id.includes("127.0.0.1")) &&
 									<>
 										<p className="card-text small text-muted mb-0">{post.likes.length} Likes</p>
 										<div className="d-flex align-items-center mt-2">

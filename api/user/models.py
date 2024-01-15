@@ -15,9 +15,9 @@ def getHostURL():
         if settings.DJANGO_ENV == 'development':
             return "http://127.0.0.1:8000/"
         else:
-            return "https://c404-5f70eb0b3255.herokuapp.com/"
+            return "https://socialdistribution.onrender.com/"
     else:
-        return "https://c404-5f70eb0b3255.herokuapp.com/"  # or any default value
+        return "https://socialdistribution.onrender.com/"  # or any default value
 
 class UserManager(BaseUserManager):
 

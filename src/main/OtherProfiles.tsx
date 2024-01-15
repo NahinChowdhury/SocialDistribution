@@ -311,7 +311,7 @@ export const OtherProfiles:FunctionComponent = () => {
 						Posts
 					</h5>
 				</div>
-				{(otherUserInfo.url.includes("127.0.0.1") || otherUserInfo.url.includes("c404-5f70eb0b3255.herokuapp.com")) &&
+				{(otherUserInfo.url.includes("127.0.0.1") || otherUserInfo.url.includes("socialdistribution.onrender.com")) &&
 				<div className="col d-flex align-items-center justify-content-center"
 					style={{
 						backgroundColor: currentTab === 'social' ? 'gray' : 'white',
@@ -328,7 +328,7 @@ export const OtherProfiles:FunctionComponent = () => {
 			</div>
 			}
 			{Object.keys(otherUserInfo).length > 0 && currentTab === 'posts' && <Posts mode={"others"} customUrl={customUrl} otherUser={otherUserInfo}/>}
-			{Object.keys(otherUserInfo).length > 0 && (otherUserInfo.url.includes("127.0.0.1") || otherUserInfo.url.includes("c404-5f70eb0b3255.herokuapp.com")) && currentTab === 'social' && <OtherSocials otherUser={otherUserInfo} />}
+			{Object.keys(otherUserInfo).length > 0 && (otherUserInfo.url.includes("127.0.0.1") || otherUserInfo.url.includes("socialdistribution.onrender.com")) && currentTab === 'social' && <OtherSocials otherUser={otherUserInfo} />}
 		</div>
 	)
 }

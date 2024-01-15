@@ -410,8 +410,8 @@ export const Posts:FunctionComponent<any> = ({mode="timeline", customUrl = "", o
                                         <h1 className="card-title display-1" style={{marginLeft: "0.5rem"}}>{post.title}</h1>
                                     </span>
                                     <div className="d-flex justify-content-between align-items-center">
-                                        <p className="card-text mb-0"><Link to={`/${post.author.id.split('/')[post.author.id.split('/').length - 1]}`}>{post.author.displayName}</Link> • { (post?.id?.includes("c404-5f70eb0b3255.herokuapp.com") || post?.id?.includes("127.0.0.1")) ? 'Local': post?.id?.includes("web-weavers-backend-fb4af7963149.herokuapp.com") ? 'Web Weavers' : post?.id?.includes("super-coding-team-89a5aa34a95f.herokuapp.com") ? 'Super Coding': 'Beeg Yoshi'} • {post.visibility} • {new Date(post.published).toLocaleString()}</p>
-                                        { (post.id.includes("c404-5f70eb0b3255.herokuapp.com") || post.id.includes("127.0.0.1")) &&
+                                        <p className="card-text mb-0"><Link to={`/${post.author.id.split('/')[post.author.id.split('/').length - 1]}`}>{post.author.displayName}</Link> • { (post?.id?.includes("socialdistribution.onrender.com") || post?.id?.includes("127.0.0.1")) ? 'Local': post?.id?.includes("web-weavers-backend-fb4af7963149.herokuapp.com") ? 'Web Weavers' : post?.id?.includes("super-coding-team-89a5aa34a95f.herokuapp.com") ? 'Super Coding': 'Beeg Yoshi'} • {post.visibility} • {new Date(post.published).toLocaleString()}</p>
+                                        { (post.id.includes("socialdistribution.onrender.com") || post.id.includes("127.0.0.1")) &&
                                             <span>
                                                 {post.author.id === user.id && <button className="btn btn-warning" style={{marginRight: "0.25rem"}} onClick={() => {setOpenEditPost(!openEditPost); setPostToEdit(post)}}>Edit Post</button>}
                                                 {post.author.id === user.id && <button className="btn btn-danger" style={{marginRight: "0.25rem"}} onClick={() => deletePost(post.id)}>Delete Post</button>}
@@ -436,7 +436,7 @@ export const Posts:FunctionComponent<any> = ({mode="timeline", customUrl = "", o
                                             {<img src={post.image} alt="Post Image" style={{width: "50%"}}/>}
                                         </div>
                                     }
-                                    {(post.id.includes("c404-5f70eb0b3255.herokuapp.com") || post.id.includes("127.0.0.1")) && post.source !== post.origin && 
+                                    {(post.id.includes("socialdistribution.onrender.com") || post.id.includes("127.0.0.1")) && post.source !== post.origin && 
                                         <div className="d-flex justify-content-start">
                                             <p className="card-text small text-muted mb-0">
                                                 <a href={`${window.location.origin}/${post.origin?.split('authors/')[1]}`}>
@@ -476,7 +476,7 @@ export const Posts:FunctionComponent<any> = ({mode="timeline", customUrl = "", o
                                                     </button>
                                             </div>
                                             {
-                                                (post.id.includes("c404-5f70eb0b3255.herokuapp.com") || post.id.includes("127.0.0.1")) &&
+                                                (post.id.includes("socialdistribution.onrender.com") || post.id.includes("127.0.0.1")) &&
                                                 <div className="d-flex align-items-center">
                                                     <button className="btn btn-success" onClick={ () => {sharePost(post)}}>
                                                         Share

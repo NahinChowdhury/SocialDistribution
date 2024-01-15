@@ -7,7 +7,7 @@ CMPUT 404 Project: Social Distribution
 
 Link to Site
 ==========
-    https://c404-5f70eb0b3255.herokuapp.com/login
+    https://socialdistribution.onrender.com/login
 
 Resources
 ==========
@@ -40,7 +40,7 @@ Tests
 
 Documentation
 =======
-    https://c404-5f70eb0b3255.herokuapp.com/swagger/
+    https://socialdistribution.onrender.com/swagger/
     Note: To get a successful response from authorized endpoints, please click on the Authorize button and pass a valid token
     Example token: Token 0dc5bf543ed82edd06e754ef32ee91d779c2618f
 

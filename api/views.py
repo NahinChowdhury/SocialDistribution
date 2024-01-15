@@ -92,7 +92,7 @@ class PostsListView(ListAPIView):
         author = User.objects.filter(id=author_id).first()
         if author:
 
-            if "c404-5f70eb0b3255.herokuapp.com" in author.url or "127.0.0.1" in author.url:
+            if "socialdistribution.onrender.com" in author.url or "127.0.0.1" in author.url:
                 queryset = self.get_queryset().filter(author__id=author_id)
                 page = self.paginate_queryset(queryset)
                 if page is not None:
@@ -816,7 +816,7 @@ class UserListView(ListAPIView):
         user = request.user
 
         queryset = self.get_queryset()
-        queryset = queryset.filter(Q(host='http://127.0.0.1:8000/') | Q(host='https://c404-5f70eb0b3255.herokuapp.com/'))
+        queryset = queryset.filter(Q(host='http://127.0.0.1:8000/') | Q(host='https://socialdistribution.onrender.com/'))
 
         if isinstance(user, User):
             queryset = queryset.exclude(id=user.id)

@@ -188,7 +188,7 @@ export const CommentSection:FunctionComponent<any> = ({post=[]}) => {
                             <Link to={`/${comment.author.id}`} style={{textDecoration: 'none', color: 'black'}}><h5 className="card-title" style={{marginLeft: "0.5rem"}}>{comment.author.displayName}</h5></Link>
                         </span>
                         {
-                            (post.id.includes("c404-5f70eb0b3255.herokuapp.com") || post.id.includes("127.0.0.1")) &&
+                            (post.id.includes("socialdistribution.onrender.com") || post.id.includes("127.0.0.1")) &&
                             Object.keys(user).length !== 0 && 
                             <span>
                                 {user.id === comment.author.id && <button className="btn btn-warning" style={{marginRight: "0.25rem"}} onClick={() => {setOpenEditComment(!openEditComment); setCommentToEdit(comment)}}>Edit Comment</button>}
@@ -204,7 +204,7 @@ export const CommentSection:FunctionComponent<any> = ({post=[]}) => {
                             <ReactMarkdown>{comment.comment}</ReactMarkdown>
                         }
                     </p>
-                    { (post.id.includes("c404-5f70eb0b3255.herokuapp.com") || post.id.includes("127.0.0.1")) && (comment?.id?.includes("c404-5f70eb0b3255.herokuapp.com") || comment?.id?.includes("127.0.0.1")) &&
+                    { (post.id.includes("socialdistribution.onrender.com") || post.id.includes("127.0.0.1")) && (comment?.id?.includes("socialdistribution.onrender.com") || comment?.id?.includes("127.0.0.1")) &&
                         <div className="d-flex align-items-start flex-column mt-2">
                             <p className="card-text small text-muted mb-0">{comment.likes.length} Likes</p>
                             {   
