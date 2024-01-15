@@ -43,7 +43,6 @@ Documentation
     https://c404-5f70eb0b3255.herokuapp.com/swagger/
     Note: To get a successful response from authorized endpoints, please click on the Authorize button and pass a valid token
     Example token: Token 0dc5bf543ed82edd06e754ef32ee91d779c2618f
-![image](https://github.com/uofa-cmput404/404f23project-a-team/assets/46066736/dc21ae7c-1b37-45d9-a4db-2a07b9d3e72f)
 
 Usage of AJAX
 ==============
